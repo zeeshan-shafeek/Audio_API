@@ -62,7 +62,7 @@ Example Response:
   "text": "This is the solution text",
   "Video_content": "http://example.com/video/12345"
 }
-
+```
 
 ### UserAudioViewSet
 To use the `UserAudioViewSet`, follow these steps:
@@ -87,9 +87,21 @@ Example Response:
   "createdAt": "2023-05-15T10:30:00Z",
   "Audio_content": "http://example.com/audio/1"
 }
+```
 
 Example POST Request:
     POST /user-audio/
     Content-Type: multipart/form-data
 
+Example Response:
 
+```json
+ {
+        "id": 1,
+        "class_distribution": null,
+        "Video_content": "http://example.com/video/1",
+        "Infant_cry_class_by_model": "",
+        "Infant_cry_class_rate": "",
+        "Infant_cry_class_by_user": ""
+    }
+```
